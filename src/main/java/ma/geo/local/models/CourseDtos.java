@@ -1,30 +1,31 @@
 package ma.geo.local.dtos;
 
-public class StudentDtos {
+
+public class CourseDtos {
     private long id;
-    private String nom;
+    private String name;
 
     public long getId() {
         return id;
-    }
-
-    public String getNom() {
-        return nom;
     }
 
     public void setId(long id) {
         this.id = id;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override
     public String toString() {
-        return "StudentDtos{" +
+        return "CourseDTO{" +
                 "id=" + id +
-                ", nom='" + nom + '\'' +
+                ", name='" + name + '\'' +
                 '}';
     }
 }
